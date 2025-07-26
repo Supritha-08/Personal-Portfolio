@@ -1,92 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-*{
-    padding:0;
-    margin:0;
-}
-body {
-    font-family:"Poppins", sans-serif; /* Use the Poppins font for the body */
-    font-style:normal;
-    
-    /* Use the Poppins font for elements with the .poppins-thin class */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.poppins-thin {
+/* Global styles */
+body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  padding-top: 70px; /* Offset for fixed navbar */
+  background-color: #f9f9f9;
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 10vh;
-  width: 220px;
-  background-color: white;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px 20px;
-  z-index: 1000;
-}
+
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 70px;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  z-index: 999;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: lightskyblue;
+  white-space: nowrap;
+}
+
+/* Menu */
 .menu-bar {
-  display: flex !important;        /* force horizontal layout */
-  flex-direction: row !important;  /* prevent vertical stacking */
+  display: flex;
   gap: 25px;
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 10px 20px;
-  z-index: 999;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.menu-bar {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.menu-bar li a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
+.menu-bar li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: lightblue;
+}
+
+/* Hamburger menu icon */
 .hamburger {
-  display: none; /* Hidden by default; show via media query */
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 
+/* Mobile Menu */
 @media (max-width: 768px) {
   .menu-bar {
     display: none;
-    flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 70px;
     right: 20px;
     background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .menu-bar.show {
@@ -95,80 +87,10 @@ body {
 
   .hamburger {
     display: block;
-    cursor: pointer;
   }
 }
 
-.menu-bar li a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-
-/* Hide hamburger menu if not needed */
-.menu-icon {
-  display: none;
-}
-
-.menu-bar{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0;
-    font-weight:600;
-    margin:0;
-    padding:0;
-    
-    color: black;
-    text-decoration: none;
-    width:60%;
-    position: relative;
-
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-/* or fixed if sticky */
-    justify-content: space-around;
-
-}
-.logo{
-    font-size: 24px;
-    font-weight: bold;
-    color: lightskyblue;
-    margin-bottom: 40px;
-    white-space: nowrap;
-
-}
-.menu-bar li a {
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.menu-bar li a:hover {
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    text-decoration-color: lightblue;
-}
-.navbar-menu{
-    display:none;
-}
-.navbar,
-.navbar-menu {
-  display: flex;
-  justify-content: space-between; /* logo on left, menu on right */
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: white;
-  padding: 10px 20px;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
+/* Bubbles Background */
 .bubbles {
   position: fixed;
   top: 0;
@@ -177,18 +99,24 @@ body {
   height: 100%;
   pointer-events: none;
   overflow: hidden;
-  z-index: 999;
+  z-index: 0;
 }
 
 .bubble {
   position: absolute;
   bottom: -100px;
-  width: 40px;
-  height: 40px;
   background: rgba(0, 123, 255, 0.3);
   border-radius: 50%;
   animation: rise 10s infinite ease-in;
 }
+
+.bubble:nth-child(1) { left: 5%; width: 20px; height: 20px; animation-duration: 8s; }
+.bubble:nth-child(2) { left: 15%; width: 30px; height: 30px; animation-duration: 10s; }
+.bubble:nth-child(3) { left: 25%; width: 15px; height: 15px; animation-duration: 7s; }
+.bubble:nth-child(4) { left: 40%; width: 25px; height: 25px; animation-duration: 12s; }
+.bubble:nth-child(5) { left: 60%; width: 35px; height: 35px; animation-duration: 9s; }
+.bubble:nth-child(6) { left: 75%; width: 18px; height: 18px; animation-duration: 11s; }
+.bubble:nth-child(7) { left: 85%; width: 22px; height: 22px; animation-duration: 10s; }
 
 @keyframes rise {
   0% {
@@ -201,51 +129,7 @@ body {
   }
 }
 
-.bubble:nth-child(1) { left: 5%; animation-duration: 8s; width: 20px; height: 20px; }
-.bubble:nth-child(2) { left: 15%; animation-duration: 10s; width: 30px; height: 30px; }
-.bubble:nth-child(3) { left: 25%; animation-duration: 7s; width: 15px; height: 15px; }
-.bubble:nth-child(4) { left: 40%; animation-duration: 12s; width: 25px; height: 25px; }
-.bubble:nth-child(5) { left: 60%; animation-duration: 9s; width: 35px; height: 35px; }
-.bubble:nth-child(6) { left: 75%; animation-duration: 11s; width: 18px; height: 18px; }
-.bubble:nth-child(7) { left: 85%; animation-duration: 10s; width: 22px; height: 22px; }
-
-
-@media (max-width: 1024px) {
-  .navbar {
-    display: none;
-  }
-
-  .navbar-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    padding: 10px 20px;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-}
-
-@media(max-width:767px){
-    .logo{
-        white-space: nowrap;
-    }
-    .navbar-menu .logo{
-        font-size: 25px;
-        padding-left:10px;
-        margin-top:25px;
-
-    }
-    
-}
-
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* Adjust based on your navbar height */
 }
-
