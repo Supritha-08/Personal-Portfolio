@@ -112,7 +112,7 @@ h1{
         padding:50px;
     }
 }
-@media(max-width:767px){
+@media(max-width:768px){
     .sec1{
         flex-direction:column;
         display:flex;

@@ -2,16 +2,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 200px;
+    padding-top: 50px;
     gap: 80px;
+    height:90vh;
+    margin-top:0px;
+    margin-bottom:0px;
 }
 .sec-7-1{
     display:flex;
+    font-weight:300px;
+    font-size:35px;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.sec-7-1 h1{
+    font-size: 150px;
+    font-weight: 600;
+    margin-top:0px;
+    margin-bottom:0px;
+   
 }
 .sec-7-1 > :nth-child(1){
     font-weight:600;
+    margin-top:0px;
+    margin-bottom:0px;
 }
 .a1,.a2{
     display:flex;
@@ -28,10 +44,27 @@
     display:flex;
     gap:30px;
     border:2px solid black;
-    padding:25px;
+    padding:0px;
     border-radius: 30px;
+    margin-top:0px;
+    margin-bottom:0px;
 }
 .a1 span,.a2 span{
     font-weight:600;
 
+}
+.social-icons a {
+  margin: 20px;
+  color: #333;
+  font-size:90px;
+  text-decoration: none;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.contact-icons{
+    gap: 20px;
+    font-size: 200px;
+    align-items: center;
+    margin-top:0px;
+    margin-bottom:0px;
 }
