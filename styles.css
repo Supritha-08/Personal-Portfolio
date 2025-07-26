@@ -32,16 +32,13 @@ body {
     list-style:none;
     font-weight:60px;
     display:flex;
+    flex-direction: column;
     color: black;
     text-decoration: none;
     width:60%;
     position: relative;
     position: fixed;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    /* Change if needed */
-    padding: 15px 20px;
+    top: 0px;
     font-size: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 /* or fixed if sticky */
