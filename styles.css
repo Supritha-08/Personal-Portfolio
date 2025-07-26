@@ -36,6 +36,8 @@ body {
     gap: 20px;
     padding: 0;
     font-weight:60px;
+    margin:0;
+    padding:0;
     
     color: black;
     text-decoration: none;
@@ -70,6 +72,21 @@ body {
 .navbar-menu{
     display:none;
 }
+.navbar,
+.navbar-menu {
+  display: flex;
+  justify-content: space-between; /* logo on left, menu on right */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 
 .bubbles {
   position: fixed;
