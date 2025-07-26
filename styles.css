@@ -37,10 +37,10 @@ body {
     width:60%;
     position: relative;
     position: fixed;
-    top: 10px;
+    top: 20px;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Change if needed */
+    /* Change if needed */
     padding: 15px 20px;
     font-size: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
