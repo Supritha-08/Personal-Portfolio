@@ -27,6 +27,9 @@
 .sec-8 {
     /* Makes the navbar black */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .menu-bar1 {
