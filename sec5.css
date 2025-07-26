@@ -92,6 +92,7 @@
 }
 @media (max-width: 873px) {
   .box3{
+    margin-top:15px;
     padding-top:20px;
     width:150px;
     border:2px solid black;
@@ -126,6 +127,7 @@
 .sec-6-1 {
     top:10px;
     padding: 20px;
+    font-size:20px;
   }
 span{
     font-size: 10px;
