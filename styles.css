@@ -28,6 +28,40 @@ body {
   padding: 30px 20px;
   z-index: 1000;
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.menu-bar {
+  display: flex !important;        /* force horizontal layout */
+  flex-direction: row !important;  /* prevent vertical stacking */
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-bar li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+/* Hide hamburger menu if not needed */
+.menu-icon {
+  display: none;
+}
+
 .menu-bar{
     list-style: none;
     display: flex;
