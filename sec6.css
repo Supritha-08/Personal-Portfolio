@@ -99,7 +99,7 @@
   .box3{
     margin-top:0px;
     padding-top:10px;
-    width:150px;
+    width:120px;
     border:2px solid black;
     height:400px;
     display:flex;
@@ -114,7 +114,7 @@
     margin-bottom: 10px;
 }
 .box3 img{
-    width:150px;
+    width:100px;
     height:150px;
     border-radius: 09px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -138,4 +138,9 @@ span{
     margin-top:10px;
     margin-bottom:10px;
   }
+
+@media(max-width:1090){
+
+
+}
 }
