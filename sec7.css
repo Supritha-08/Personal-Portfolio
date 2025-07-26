@@ -94,3 +94,20 @@
     margin-bottom: 0px;
 }
 }
+@media (max-width: 1090px) {
+    span{
+        font-size:25px;
+    }
+    h1{
+         font-size:40px;
+    }
+    *{
+        margin:5px;
+        padding:5px;
+    }
+    .footer{
+        margin-top:0px;
+    }
+
+
+}
