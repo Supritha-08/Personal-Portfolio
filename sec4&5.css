@@ -46,7 +46,7 @@
 .box-2 {
   border: 2px solid black;
   width: 400px;
-  height:350px;
+  height:450px;
   padding: 20px;
   margin-bottom:20px;
   border-radius: 15px;
@@ -236,5 +236,78 @@ h1 {
 
   .skills-1-2 > :first-child {
     font-size: 18px;
+  }
+}
+/* Section Styling */
+.sec-5 {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.sec-5 h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Swiper Styling */
+.swiper {
+  width: 100%;
+  max-width: 1100px;
+  padding: 20px 0;
+  margin: auto;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.05);
+  background: #dceeff;
+  color: #000;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0077ff;
+}
+
+.swiper-pagination-bullet {
+  background: #0077ff;
+}
+
+/* Entrance animation for heading */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .swiper-slide {
+    font-size: 1rem;
+    padding: 20px;
   }
 }
