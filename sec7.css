@@ -44,6 +44,29 @@
     margin-top:0px;
     margin-bottom:0px;
 }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #f8f8f8; /* Light background (optional) */
+  border-top: 1px solid #ddd; /* Optional border line */
+}
+
+.footer span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Optional: Smaller text on very small devices */
+@media (max-width: 480px) {
+  .footer span {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 873px) {
     span{
         font-size: 20px;
