@@ -1,0 +1,109 @@
+.sec-8{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.sec-8-1{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.sec-8-1 >:nth-child(1){
+    font-weight:600;
+    font-size: 30px;
+}
+.sec-8-1 >:nth-child(1){
+    font-weight:600;
+    font-size: 30px;
+}
+.sec8>:nth-child(2){
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+.sec-8 {
+    /* Makes the navbar black */
+    text-align: center;
+}
+
+.menu-bar1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.sec-8 li a {
+    text-decoration: none;
+    font-size: 30px;
+   
+    color: black; /* White text for contrast */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;                   
+    transition: color 0.3s;
+}
+
+.sec-8 li a:hover {
+    color: lightblue; /* Optional: hover effect */
+}
+
+.sec-8 span {
+    display: block;
+    color: black;
+    font-size: 16px;
+    align-items: center;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+    font-size:30px;
+}
+
+@media(max-width: 1024px){
+    .sec-8{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        padding-top: 100px;
+    }
+    .sec-8>:nth:chid(2){
+        margin-top:30px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .sec-8-2{
+        display:flex;
+        gap:20px;
+        border:2px solid black;
+        padding:20px;
+    }
+}
+@media(max-width:767px){
+    .sec-8>:nth:chid(1){
+        gap:30px;
+        display:grid;
+        grid-template-columns:auto auto;
+        text-align:center;
+    }
+    .sec-8>:nth:chid(2){
+        margin-top:30px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .sec-5-2{
+        gap:20px;
+        padding:20px;
+    }
+}
