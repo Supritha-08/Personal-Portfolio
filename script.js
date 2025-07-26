@@ -11,25 +11,22 @@ const navbar = document.querySelector('.navbar');
 const sec1 = document.querySelector('#sec-1');
 
 const observer = new IntersectionObserver(([entry]) => {
-  if (entry.isIntersecting) {
-    navbar.style.display = 'flex';
-  } else {
-    navbar.style.display = 'none';
-  }
+  navbar.style.display = entry.isIntersecting ? 'flex' : 'none';
 }, { threshold: 0.5 });
 
 observer.observe(sec1);
 
-// ✅ Single Swiper initialization
+// ✅ Single Swiper Initialization
 const swiper = new Swiper('.mySwiper', {
   loop: true,
   centeredSlides: true,
   spaceBetween: 30,
+  slidesPerView: 3,
   autoplay: {
-    delay: 2500,
+    delay: 1800,
     disableOnInteraction: false,
   },
-  effect: 'slide', // Options: 'slide', 'fade', 'coverflow', etc.
+  effect: 'slide',
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -42,5 +39,22 @@ const swiper = new Swiper('.mySwiper', {
     1024: { slidesPerView: 3 },
     768: { slidesPerView: 2 },
     480: { slidesPerView: 1 },
+  },
+  on: {
+    slideChangeTransitionStart: () => {
+      document.querySelectorAll('.swiper-slide').forEach(slide =>
+        slide.classList.remove('animate')
+      );
+    },
+    slideChangeTransitionEnd: () => {
+      const activeSlide = document.querySelector('.swiper-slide-active');
+      if (activeSlide) activeSlide.classList.add('animate');
+    }
   }
+});
+
+// Initial animation on page load
+window.addEventListener('load', () => {
+  const activeSlide = document.querySelector('.swiper-slide-active');
+  if (activeSlide) activeSlide.classList.add('animate');
 });

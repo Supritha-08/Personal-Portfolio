@@ -252,59 +252,81 @@ h1 {
   animation: fadeInUp 1s ease-in-out;
 }
 
-/* Swiper Styling */
-.swiper {
-  width: 100%;
-  max-width: 1100px;
-  padding: 20px 0;
-  margin: auto;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ccc; /* Gray background */
+  margin: 0;
+  padding: 50px 20px;
+  text-align: center;
 }
 
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.swiper-slide {
-  background: #fff;
-  padding: 30px 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  font-size: 1.2rem;
-  font-weight: 600;
+h1 {
+  margin-bottom: 30px;
   color: #222;
-  transition: transform 0.3s ease, background 0.3s ease;
 }
 
+/* Swiper Container */
+.swiper {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Each slide */
+.swiper-slide {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffd54f, #4dd0e1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+/* Slide in animation */
+.swiper-slide.animate {
+  animation: slideIn 0.6s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hover effect */
 .swiper-slide:hover {
+  background: linear-gradient(135deg, #ffd180, #80deea);
   transform: scale(1.05);
-  background: #dceeff;
-  color: #000;
 }
 
-/* Swiper Navigation Buttons */
+/* Swiper navigation buttons */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #0077ff;
+  color: #333;
 }
 
+/* Swiper pagination */
 .swiper-pagination-bullet {
-  background: #0077ff;
+  background-color: #333;
+  opacity: 0.4;
 }
 
-/* Entrance animation for heading */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .swiper-slide {
     font-size: 1rem;
