@@ -93,6 +93,12 @@ body {
     display: block;
   }
 }
+@media (max-width: 873pxx) {
+     .navbar-menu.show {
+    display: flex;
+  }
+}
+
 
 /* Bubbles Background */
 .bubbles {
