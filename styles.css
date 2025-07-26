@@ -37,8 +37,9 @@ body {
     color: black;
     text-decoration: none;
     width:60%;
-    position: relative; /* or fixed if sticky */
-    z-index: 999;
+    position: relative;
+    
+    z-index: 2;/* or fixed if sticky */
     justify-content: space-around;
 
 }

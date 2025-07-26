@@ -44,6 +44,8 @@ p{
 h1{
     font-size:70px;
     color: lightblue;
+    position:relative;
+    z-index: 1;
 }
 .btns{
     margin-top: 20px;
@@ -88,37 +90,37 @@ h1{
     padding-bottom:150px;
 }
 @media(max-width:1024px){
-    .sec1{
+    .sec-1{
         flex-direction:column;
         display:flex;
         height:100%;
         align-items:center;
-        gap:60 px;
+        gap:60px;
         margin-bottom:50px;
 
     }
     p{
         text-align:center;
-        width:70%
+        width: 70%
     }
     .sec-1-1{
-        margin-left:0px;
+        margin-left: 0px;
     }
      .sec-1-1 img{
-       width:450px;
+       width: 450px;
     }
     .sec-1-2{
         align-items:center;
-        padding:50px;
+        padding: 50px;
     }
 }
 @media(max-width:768px){
-    .sec1{
+    .sec-1{
         flex-direction:column;
         display:flex;
-        height:90vhl;
+        height: 90vh;
         align-items:center;
-        gap:60 px;
+        gap: 60px;
 
     }
     p{
