@@ -48,6 +48,7 @@ body {
   display: flex;
   gap: 25px;
   list-style: none;
+  margin-bottom:10px;
 }
 
 .menu-bar li a {
@@ -96,6 +97,9 @@ body {
 @media (max-width: 873pxx) {
      .navbar-menu.show {
     display: flex;
+  }
+  .menu-bar{
+    margin-bottom:10px;
   }
 }
 
