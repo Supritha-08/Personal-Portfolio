@@ -209,21 +209,6 @@
 
 }
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .swiper-slide {
   background: #eee;
   padding: 20px;
@@ -231,14 +216,14 @@
   border-radius: 12px;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 .swiper-slide:hover {
   background: #ddd;
   transform: scale(1.05);
   transition: transform 0.3s ease;
   color:lightblue;
-  margin-bottom:10px;
+  margin-bottom:50px;
 
 }
 .sec-5 h1{
