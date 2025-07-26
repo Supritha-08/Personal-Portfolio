@@ -92,7 +92,11 @@
 }
 @media (max-width: 873px) {
   .sec-6 {
-    height: auto;
+    height: 100%;
+    padding: 20px;
+  }
+  sec-6-1 {
+    top:0px;
     padding: 20px;
   }
   span{
