@@ -1,35 +1,28 @@
-.sec-8{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-.sec-8-1{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-}
-.sec-8-1 >:nth-child(1){
-    font-weight:600;
-    font-size: 30px;
-}
-.sec-8-1 >:nth-child(1){
-    font-weight:600;
-    font-size: 30px;
-}
-.sec8>:nth-child(2){
-    font-size: 14px;
-    margin-top: 30px;
-    margin-bottom:20px;
-    font-weight:600;
-}
 .sec-8 {
-    /* Makes the navbar black */
-    text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
+.sec-8-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-8-1 > :first-child {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.sec-8 > :nth-child(2) {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .menu-bar1 {
@@ -38,123 +31,82 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 40px;
-    margin-top:0px;
-    margin-bottom:0px;
 }
 
 .sec-8 li a {
     text-decoration: none;
     font-size: 30px;
-    margin-top:0px;
-    margin-bottom:0px;
-    color: black; /* White text for contrast */
+    color: black;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    justify-content: space-around;
-    gap: 40px;                   
     transition: color 0.3s;
 }
 
 .sec-8 li a:hover {
-    color: lightblue; /* Optional: hover effect */
+    color: lightblue;
 }
 
 .sec-8 span {
-    display: block;
     color: black;
-    font-size: 16px;
-    align-items: center;
+    font-size: 30px;
     font-weight: 300;
     text-align: center;
     padding: 10px;
-    font-size:30px;
+    display: block;
 }
 
-@media(max-width: 1024px){
-    .sec-8{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
+/* Tablet */
+@media (max-width: 1024px) {
+    .sec-8 {
         padding-top: 100px;
+        margin-top: 100px;
     }
-    .sec-8 > :nth:chid(2){
-        margin-top:30px;
+
+    .sec-8 > :nth-child(2) {
+        margin-top: 30px;
         margin-bottom: 20px;
         font-size: 14px;
         font-weight: 600;
     }
-    .sec-8-2{
-        display:flex;
-        flex-direction: column;
-        gap:20px;
-        border:2px solid black;
-        padding:20px;
-    }
-}
-@media(max-width:767px){
-    .sec-8 > :nth:chid(1){
-        gap:30px;
-        display:grid;
-        grid-template-columns:auto auto;
-        text-align:center;
-    }
-    .sec-8 > :nth:chid(2){
-        margin-top:30px;
-        margin-bottom: 20px;
-        font-size: 14px;
-        font-weight: 600;
-    }
-    .sec-5-2{
-        gap:20px;
-        padding:20px;
-    }
-}
-@media (max-width: 873px) {
-    .menu-bar1{
+
+    .sec-8-2 {
         display: flex;
         flex-direction: column;
-        margin-top: 0;
-        margin-bottom: 0;
+        gap: 20px;
+        border: 2px solid black;
+        padding: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .sec-8-1 {
+        gap: 30px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .sec-8 > :nth-child(2) {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .menu-bar1 {
+        flex-direction: column;
         font-size: 15px;
-        text-align: center;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        margin-top: 20px;
-        gap: 40px;
-        margin-left:20px;
-        align-items: center;
-        justify-content: space-around;
-        margin-top:10px;
-        margin-bottom: 10px;
-
-    }
-    .menu-bar1 li a:hover {
-        color: lightblue;
+        gap: 30px;
     }
 
-     .menu-bar1 li a {
-        text-decoration: none;
+    .menu-bar1 li a {
         font-size: 20px;
-        color: black;
-        font-weight: bold;
-        transition: color 0.3s;
-     }
-    span{
-        text-align: center;
+    }
+
+    .sec-8 span {
         font-size: 20px;
-        font-weight: 450px;
-        align-items: center;
+        font-weight: 450;
         padding: 10px;
     }
-     .navbar-menu {
-    display: none;
-  }
-    }
+}
