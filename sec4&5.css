@@ -6,6 +6,7 @@
     padding-top:10px;
     height: 80vh;
     font-family: Arial, sans-serif;
+    margin-bottom: 0px;
 
 }
 .sec-4-1{
@@ -16,6 +17,7 @@
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
     gap: 20px;
+     margin-bottom: 0px;
 }
 .skills{
     display:grid;
@@ -24,7 +26,7 @@
     align-items: center;
     gap:30px;
     font-family: Arial, sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 
     /* <!--  grid-template-columns: grid-auto-flow: ;--> */
 }
@@ -32,7 +34,7 @@
     font-size:50px;
     font-weight: 600;
     font-family: Arial, sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 
 }
 .sec-4-2,.sec-4-3,.sec-4-4{
@@ -40,7 +42,7 @@
     flex-direction: row;
     align-items: center;
     gap: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding-bottom: 0px;
     font-family: Arial, sans-serif;
 }
@@ -55,7 +57,7 @@
     border-radius: 15px;
     gap: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .box-1{
     display: flex;
@@ -69,18 +71,18 @@
     gap: 15px;
     font-weight: 300;
     font-size:07rem;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .skills-1 img{
     width:30px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .box-2 >:nth-child(1){
     font-size: 24px;
     font-weight: 600;
     font-family: Arial, sans-serif;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 
 }
 .skills-1 {
@@ -88,19 +90,19 @@
     align-items:start ;
     gap:10px;
     font-family: Arial, sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .skills-1-2 {
     display:flex;
     font-family: Arial, sans-serif;
     flex-direction:column;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .skills-1-2 >:nth-child(1){
     font-weight: 600;
     font-family: Arial, sans-serif;
     font-size:18px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 @media(max-width: 1024px){
 .sec-4-2{
@@ -207,6 +209,9 @@
         margin-top:0px;
         margin-bottom: 0px;
     }
+
+}
+
         
 
 
@@ -245,13 +250,13 @@
     font-size:50px;
     font-weight: 600;
     font-family: Arial, sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 
 }
 .sec5{
     margin-top: 20px;
     padding-bottom: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     font-family: Arial, sans-serif;
 
 }
