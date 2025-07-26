@@ -158,6 +158,26 @@ h1{
         font-size: 12px;
     }
 }
+@media (max-width: 878px) {
+    .sec-1-2-1{
+    margin-top:20px;
+    font-size: 15px;
+  }
+  .menu-bar{
+    margin-top:10px;
+    font-size: 25px;
+  }
+  p{
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+  }
+    .btns>:nth-child(1){
+        padding: 20px;
+        font-size: 12px;
+    }
+}
+
 
 
 
