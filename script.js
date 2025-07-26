@@ -6,7 +6,7 @@ hamburger.addEventListener('click', () => {
 });
 
 const navbar = document.querySelector('.navbar');
-const sec1 = document.querySelector('#sec1');
+const sec1 = document.querySelector('#sec-1');
 
 const observer = new IntersectionObserver(([entry]) => {
   if (entry.isIntersecting) {
