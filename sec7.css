@@ -19,39 +19,15 @@
 }
 .sec-7-1 h1{
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 200;
     margin-top:0px;
     margin-bottom:0px;
    
 }
 .sec-7-1 > :nth-child(1){
-    font-weight:600;
+    font-weight:200;
     margin-top:0px;
     margin-bottom:0px;
-}
-.a1,.a2{
-    display:flex;
-    align-items: center;
-    gap:10px;
-}
-.a1 img{
-    width:35px;
-}
-.a2 img{
-    width:30px;
-}
-.sec-7-2{
-    display:flex;
-    gap:30px;
-    border:2px solid black;
-    padding:0px;
-    border-radius: 30px;
-    margin-top:0px;
-    margin-bottom:0px;
-}
-.a1 span,.a2 span{
-    font-weight:600;
-
 }
 .social-icons a {
   margin: 20px;
