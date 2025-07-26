@@ -50,6 +50,54 @@ body {
   padding: 0;
   margin: 0;
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger {
+  display: none; /* Hidden by default; show via media query */
+}
+
+@media (max-width: 768px) {
+  .menu-bar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .menu-bar.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
 
 .menu-bar li a {
   text-decoration: none;
