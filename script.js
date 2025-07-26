@@ -58,3 +58,18 @@ window.addEventListener('load', () => {
   const activeSlide = document.querySelector('.swiper-slide-active');
   if (activeSlide) activeSlide.classList.add('animate');
 });
+swiper.on('slideChangeTransitionStart', () => {
+  document.querySelectorAll('.swiper-slide').forEach(slide =>
+    slide.classList.remove('animate')
+  );
+});
+
+swiper.on('slideChangeTransitionEnd', () => {
+  const activeSlide = document.querySelector('.swiper-slide-active');
+  if (activeSlide) activeSlide.classList.add('animate');
+});
+
+window.addEventListener('load', () => {
+  const activeSlide = document.querySelector('.swiper-slide-active');
+  if (activeSlide) activeSlide.classList.add('animate');
+});

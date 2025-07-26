@@ -42,13 +42,13 @@
   gap: 40px;
 }
 
-/* ==== Skill Box (Card) ==== */
+/* ==== Skill Box ==== */
 .box-2 {
   border: 2px solid black;
   width: 400px;
-  height:450px;
+  height: 450px;
   padding: 20px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: flex;
@@ -87,7 +87,6 @@
   width: 30px;
 }
 
-/* ==== Skill Label/Text ==== */
 .skills-1-2 {
   display: flex;
   flex-direction: column;
@@ -98,12 +97,14 @@
   font-size: 18px;
 }
 
+/* ==== Section Headings ==== */
 h1 {
   text-align: center;
   font-size: 3rem;
   animation: fadeInDown 1s ease-out forwards;
   opacity: 0;
   margin-bottom: 20px;
+  color: #222;
 }
 
 @keyframes fadeInDown {
@@ -117,63 +118,85 @@ h1 {
   }
 }
 
-/* Swiper Slide Card Style + Animation */
-.swiper-slide {
-  background: #f5f5f5;
-  padding: 20px;
+/* ==== Section 5 Styling ==== */
+.sec-5 {
+  padding: 60px 20px;
+  background: #f9f9f9;
   text-align: center;
-  border-radius: 12px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: slideFadeIn 0.6s ease-out forwards;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
 }
 
-/* Apply delay to each slide */
-.swiper-slide:nth-child(1) { animation-delay: 0.1s; }
-.swiper-slide:nth-child(2) { animation-delay: 0.2s; }
-.swiper-slide:nth-child(3) { animation-delay: 0.3s; }
-.swiper-slide:nth-child(4) { animation-delay: 0.4s; }
-/* ...continue as needed */
+.sec-5 h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease-in-out;
+}
 
-@keyframes slideFadeIn {
+/* ==== Swiper Container ==== */
+.swiper {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== Swiper Slide ==== */
+.swiper-slide {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffd54f, #4dd0e1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Slide-in Animation Triggered by .animate */
+.swiper-slide.animate {
+  animation: slideIn 0.6s ease forwards;
+}
+
+@keyframes slideIn {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.mySwiper {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-/* Hover effect */
+
+/* Swiper Hover Effect */
 .swiper-slide:hover {
-  background: #e0e0e0;
+  background: linear-gradient(135deg, #ffd180, #80deea);
   transform: scale(1.05);
-  color: #1976d2;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-
-/* ==== Section 5 Heading ==== */
-.sec-5 h1 {
-  text-align: center;
-  font-size: 50px;
-  font-weight: 600;
-  font-family: Arial, sans-serif;
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333;
 }
 
-/* ==== Section 5 Wrapper ==== */
-.sec5 {
-  margin-top: 20px;
-  font-family: Arial, sans-serif;
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+  background-color: #333;
+  opacity: 0.4;
 }
 
-/* ==== Responsive Breakpoints ==== */
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* ==== Responsive Styles ==== */
 @media (max-width: 1024px) {
   .sec-4-2,
   .sec-4-3,
@@ -238,98 +261,11 @@ h1 {
     font-size: 18px;
   }
 }
-/* Section Styling */
-.sec-5 {
-  padding: 60px 20px;
-  background: #f9f9f9;
-  text-align: center;
-}
-
-.sec-5 h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 40px;
-  animation: fadeInUp 1s ease-in-out;
-}
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ccc; /* Gray background */
+  background-color: #ccc;
   margin: 0;
   padding: 50px 20px;
   text-align: center;
-}
-
-h1 {
-  margin-bottom: 30px;
-  color: #222;
-}
-
-/* Swiper Container */
-.swiper {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 50px 20px;
-  background-color: #e0e0e0;
-  border-radius: 20px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
-}
-
-/* Each slide */
-.swiper-slide {
-  font-size: 1.1em;
-  font-weight: 600;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #ffd54f, #4dd0e1);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  transition: all 0.4s ease;
-  transform: translateX(100px);
-  opacity: 0;
-}
-
-/* Slide in animation */
-.swiper-slide.animate {
-  animation: slideIn 0.6s ease forwards;
-}
-
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* Hover effect */
-.swiper-slide:hover {
-  background: linear-gradient(135deg, #ffd180, #80deea);
-  transform: scale(1.05);
-}
-
-/* Swiper navigation buttons */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #333;
-}
-
-/* Swiper pagination */
-.swiper-pagination-bullet {
-  background-color: #333;
-  opacity: 0.4;
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .swiper-slide {
-    font-size: 1rem;
-    padding: 20px;
-  }
 }
