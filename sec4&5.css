@@ -96,24 +96,66 @@
   font-size: 18px;
 }
 
-/* ==== Swiper Slide ==== */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  animation: fadeInDown 1s ease-out forwards;
+  opacity: 0;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Swiper Slide Card Style + Animation */
 .swiper-slide {
-  background: #eee;
+  background: #f5f5f5;
   padding: 20px;
   text-align: center;
   border-radius: 12px;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideFadeIn 0.6s ease-out forwards;
 }
 
-.swiper-slide:hover {
-  background: #ddd;
-  transform: scale(1.05);
-  color: lightblue;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+/* Apply delay to each slide */
+.swiper-slide:nth-child(1) { animation-delay: 0.1s; }
+.swiper-slide:nth-child(2) { animation-delay: 0.2s; }
+.swiper-slide:nth-child(3) { animation-delay: 0.3s; }
+.swiper-slide:nth-child(4) { animation-delay: 0.4s; }
+/* ...continue as needed */
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+.mySwiper {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+/* Hover effect */
+.swiper-slide:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+  color: #1976d2;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
 
 /* ==== Section 5 Heading ==== */
 .sec-5 h1 {
