@@ -138,12 +138,12 @@ a:hover{
         display:flex;
         flex-direction: column;
         position: fixed;
-        right:0;
-        top: 70px;
-        left: 0;
+        align-items:flex-start;
         width: 100%;
         background-color: white;
         padding: 10px;
+        top:0;
+        left:0;
         gap:10px;
         border-radius:5px;
         margin-right:-400px;
@@ -170,6 +170,15 @@ a:hover{
         margin-right:0px;
 
     }
+    .menu-bar {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin-top: 20px;
+}
+
 }
 @media(max-width:767px){
     .logo{
@@ -183,13 +192,7 @@ a:hover{
     }
     
 }
-@media (max-width: 873px) {
-    .menu-bar{
-        display: flex;
-        flex-direction: column;
 
-    }
-}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 70px; /* Adjust based on your navbar height */
