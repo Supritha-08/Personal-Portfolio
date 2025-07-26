@@ -68,3 +68,15 @@
     margin-top:0px;
     margin-bottom:0px;
 }
+@media (max-width: 873px) {
+    span{
+        font-size: 20px;
+        font-weight: 600;
+        top:10px;
+    }
+    h1{
+        font-size: 50px;
+        font-weight: 600;
+        top:30px;
+    }
+}
