@@ -16,7 +16,7 @@ const observer = new IntersectionObserver(([entry]) => {
 
 observer.observe(sec1);
 
-// ✅ Single Swiper Initialization
+// Swiper Initialization
 const swiper = new Swiper('.mySwiper', {
   loop: true,
   centeredSlides: true,
@@ -42,34 +42,26 @@ const swiper = new Swiper('.mySwiper', {
   },
   on: {
     slideChangeTransitionStart: () => {
-      document.querySelectorAll('.swiper-slide').forEach(slide =>
-        slide.classList.remove('animate')
-      );
+      document.querySelectorAll('.swiper-slide').forEach(slide => {
+        slide.classList.remove('animate');
+        slide.style.backgroundColor = ''; // Reset background
+      });
     },
     slideChangeTransitionEnd: () => {
       const activeSlide = document.querySelector('.swiper-slide-active');
-      if (activeSlide) activeSlide.classList.add('animate');
+      if (activeSlide) {
+        activeSlide.classList.add('animate');
+        activeSlide.style.backgroundColor = 'gray'; // Set gray background
+      }
     }
   }
 });
 
-// Initial animation on page load
+// Initial animation and gray background on page load
 window.addEventListener('load', () => {
   const activeSlide = document.querySelector('.swiper-slide-active');
-  if (activeSlide) activeSlide.classList.add('animate');
-});
-swiper.on('slideChangeTransitionStart', () => {
-  document.querySelectorAll('.swiper-slide').forEach(slide =>
-    slide.classList.remove('animate')
-  );
-});
-
-swiper.on('slideChangeTransitionEnd', () => {
-  const activeSlide = document.querySelector('.swiper-slide-active');
-  if (activeSlide) activeSlide.classList.add('animate');
-});
-
-window.addEventListener('load', () => {
-  const activeSlide = document.querySelector('.swiper-slide-active');
-  if (activeSlide) activeSlide.classList.add('animate');
+  if (activeSlide) {
+    activeSlide.classList.add('animate');
+    activeSlide.style.backgroundColor = 'gray';
+  }
 });
