@@ -36,12 +36,15 @@
 
 .social-icons a {
   color: #333;
+  display: flex;
+  flex-direction: column;
   font-size: 30px;
   text-decoration: none;
 }
 
 .contact-icons {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   font-size: 30px;
   align-items: center;
