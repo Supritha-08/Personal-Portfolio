@@ -158,7 +158,7 @@ a:hover{
 
 
     }
-    .menu-bar,navbar-menu li{
+    .menu-bar,.navbar-menu li{
         display: flex;
         flex-direction: column;
         align-items: center;
