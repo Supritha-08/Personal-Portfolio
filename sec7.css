@@ -11,14 +11,14 @@
 .sec-7-1{
     display:flex;
     font-weight:200px;
-    font-size:15px;
+    font-size:35px;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0px;
     margin-top:0px;
 }
 .sec-7-1 h1{
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 200;
     margin-top:0px;
     margin-bottom:0px;
