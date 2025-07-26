@@ -41,7 +41,7 @@
     gap:15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 0px;
+    margin-bottom: 200px;
 }
 .box3 img{
     width:300px;
@@ -106,7 +106,7 @@
     gap:10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 250px;
+    margin-bottom: 450px;
 }
 .box3 img{
     width:150px;
