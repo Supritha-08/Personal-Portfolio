@@ -134,67 +134,101 @@ h1 {
   animation: fadeInUp 1s ease-in-out;
 }
 
-/* ==== Swiper Container ==== */
-.swiper {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 50px 20px;
-  background-color: #e0e0e0;
-  border-radius: 20px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ccc; /* Gray background */
 }
 
-/* ==== Swiper Slide ==== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+  color: white;
+  padding: 10px 20px;
+  z-index: 999;
+  transition: 0.3s ease;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-bar.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #555;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 100px 20px 20px;
+  box-sizing: border-box;
+}
+
+/* Swiper styling */
+.swiper {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 0;
+}
+
 .swiper-slide {
-  font-size: 1.1em;
-  font-weight: 600;
-  color: black;
+  background-color: #888;
+  color: white;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #ffd54f, #4dd0e1);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  transition: all 0.4s ease;
-  opacity: 0;
-  transform: translateY(30px);
+  height: 300px;
+  border-radius: 15px;
+  transition: transform 0.5s;
 }
 
-/* Slide-in Animation Triggered by .animate */
 .swiper-slide.animate {
-  animation: slideIn 0.6s ease forwards;
+  transform: scale(1.1);
+  background-color: #222;
 }
 
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Swiper Hover Effect */
-.swiper-slide:hover {
-  background: linear-gradient(135deg, #ffd180, #80deea);
-  transform: scale(1.05);
-}
-
-/* Swiper Navigation */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #333;
-}
-
-/* Swiper Pagination */
-.swiper-pagination-bullet {
-  background-color: #333;
-  opacity: 0.4;
+  color: black;
 }
 
 .swiper-pagination-bullet-active {
-  opacity: 1;
+  background: black;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-bar {
+    display: none;
+  }
+}
+
 
 /* ==== Responsive Styles ==== */
 @media (max-width: 1024px) {
