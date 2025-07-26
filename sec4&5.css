@@ -46,7 +46,9 @@
 .box-2 {
   border: 2px solid black;
   width: 400px;
+  height:350px;
   padding: 20px;
+  margin-bottom:20px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: flex;
