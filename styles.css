@@ -14,6 +14,10 @@ body {
   padding-top: 70px; /* Offset for fixed navbar */
   background-color: #f9f9f9;
 }
+.navbar-menu{
+      display: none;
+
+}
 
 /* Navbar */
 .navbar {
@@ -81,7 +85,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
-  .menu-bar.show {
+  .navbar-menu.show {
     display: flex;
   }
 
