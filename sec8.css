@@ -81,70 +81,73 @@
 }
 
 /* Mobile */
-@media (max-width: 767px) {
-    .sec-8-1 {
-        gap: 30px;
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-    .sec-8 > :nth-child(2) {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 14px;
-        font-weight: 600;
-    }
-
-    .menu-bar1 {
-        display: flex;
-        flex-direction: column;
-        font-size: 15px;
-        gap: 30px;
-    }
-
-    .menu-bar1 li a {
-        font-size: 20px;
-    }
-
-    .sec-8 span {
-        font-size: 20px;
-        font-weight: 450;
-        padding: 10px;
-    }
+/* ========================
+   Default (Desktop View)
+   ======================== */
+.sec-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 100vh;
 }
+
+/* Hide mobile menu by default on desktop */
+.menu-bar1 {
+  display: none;
+}
+
+.menu-bar1 li {
+  list-style: none;
+}
+
+.menu-bar1 li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-bar1 li a:hover {
+  color: lightblue;
+}
+
+.sec-8 span {
+  color: black;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  padding: 10px;
+  display: block;
+}
+
+/* ========================
+   Tablet & Mobile (≤ 873px)
+   ======================== */
 @media (max-width: 873px) {
   .menu-bar1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    list-style: none;
     padding: 0;
     margin: 20px 0;
   }
 
   .menu-bar1 li a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    font-weight: bold;
-    color: black;
-    transition: color 0.3s;
-  }
-
-  .menu-bar1 li a:hover {
-    color: lightblue;
+    font-size: 20px;
   }
 
   .sec-8 span {
-    font-size: 20px;
-    font-weight: 450;
-    text-align: center;
-    padding: 0px;
-    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
   }
 }
+
 @media (max-width: 1090px) {
   .menu-bar1 {
     display: flex; /* Show only on smaller screens */
