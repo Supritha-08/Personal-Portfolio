@@ -18,7 +18,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 10vh;
   width: 220px;
   background-color: white;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
