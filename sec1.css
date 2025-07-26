@@ -142,7 +142,7 @@ h1{
 }
 @media (max-width: 904px) {
   .sec-1-2-1{
-    margin-top:40px;
+    margin-top:20px;
     font-size: 15px;
   }
   .menu-bar{
@@ -164,7 +164,7 @@ h1{
         margin-top: 0px;
     }
     .sec-1-2-1{
-    margin-top:0px;
+    margin-top:10px;
     font-size: 15px;
     }
     .menu-bar{
