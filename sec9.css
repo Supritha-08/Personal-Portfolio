@@ -13,11 +13,13 @@
 
 /* Hide mobile menu by default on desktop */
 .menu-bar1 {
-  display: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-bar1 li {
   list-style: none;
+  font-size: 35px;
 }
 
 .menu-bar1 li a {
