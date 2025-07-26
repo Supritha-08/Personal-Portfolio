@@ -81,13 +81,17 @@
         margin-top:280px;
         margin-bottom:50px;
     }
-    .sec-7-1{
+    .span{
         margin-top: 10px;
         margin-bottom: 10px;
 
     }
+    h1{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
     .social-icons a {
-    top:60px;
-    margin-bottom: 50px;
+    margin-top:0px;
+    margin-bottom: 10px;
 }
 }
