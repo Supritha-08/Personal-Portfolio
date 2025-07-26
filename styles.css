@@ -23,12 +23,10 @@ body {
 .navbar{
    display:flex;
    align-items: center;
-   height: 70 px;
+   height: 70px;
    padding: 0px 100px;
    padding-top:100px;
    
-
-    
 }
 .menu-bar{
     list-style:none;
