@@ -19,8 +19,8 @@ body {
    flex-direction: column;
    align-items: center;
    height: 70px;
-   padding: 0px 100px;
-   padding-top:100px;
+   padding: 0px 10px;
+   padding-top:10px;
    
 }
 .menu-bar{
